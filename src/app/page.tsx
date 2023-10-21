@@ -1,54 +1,54 @@
-'use client';
+"use client";
 
-import Checkbox from '@/components/Checkbox';
-import { SelectBoxMonth, SelectBoxYear } from '@/components/SelectBox';
-import Table from '@/components/Table';
-import { useState } from 'react';
+import Checkbox from "@/components/Checkbox";
+import { SelectBoxMonth, SelectBoxYear } from "@/components/SelectBox";
+import Table from "@/components/Table";
+import { useState } from "react";
 
 export const servosDefined: object[] = [];
 
 //Usuarios Teste
 const servos = [
-  { name: 'Israel Sales', dias: ['Domingo'], skill: 1, frequencia: 2 },
+  { name: "Israel Sales", dias: ["Domingo"], skill: 1, frequencia: 2 },
   {
-    name: 'Alyson',
-    dias: ['Quinta-Feira', 'Terça-Feira', 'Domingo'],
+    name: "Alyson",
+    dias: ["Quinta-Feira", "Terça-Feira", "Domingo"],
     skill: 1,
     frequencia: 2,
   },
   {
-    name: 'Isaque',
-    dias: ['Quinta-Feira', 'Terça-Feira', 'Domingo'],
+    name: "Isaque",
+    dias: ["Quinta-Feira", "Terça-Feira", "Domingo"],
     skill: 3,
     frequencia: 1,
   },
   {
-    name: 'Samuel',
-    dias: ['Quinta-Feira', 'Terça-Feira', 'Domingov'],
+    name: "Samuel",
+    dias: ["Quinta-Feira", "Terça-Feira", "Domingov"],
     skill: 1,
     frequencia: 2,
   },
   {
-    name: 'HAtus',
-    dias: ['Quinta-Feira', 'Terça-Feira', 'Domingo'],
+    name: "HAtus",
+    dias: ["Quinta-Feira", "Terça-Feira", "Domingo"],
     skill: 1,
     frequencia: 2,
   },
-  { name: 'PAtrick', dias: ['Domingo'], skill: 1, frequencia: 2 },
-  { name: 'Clara', dias: ['Quinta-Feira'], skill: 1, frequencia: 2 },
-  { name: 'Rebeca', dias: ['Sabado'], skill: 1, frequencia: 2 },
-  { name: 'Vini', dias: ['Quinta'], skill: 1, frequencia: 2 },
-  { name: 'Hellen', dias: ['Domingo'], skill: 1, frequencia: 2 },
+  { name: "PAtrick", dias: ["Domingo"], skill: 1, frequencia: 2 },
+  { name: "Clara", dias: ["Quinta-Feira"], skill: 1, frequencia: 2 },
+  { name: "Rebeca", dias: ["Sabado"], skill: 1, frequencia: 2 },
+  { name: "Vini", dias: ["Quinta"], skill: 1, frequencia: 2 },
+  { name: "Hellen", dias: ["Domingo"], skill: 1, frequencia: 2 },
   {
-    name: 'Magno',
-    dias: ['Quinta-Feira', 'Terça-Feira', 'Domingo'],
+    name: "Magno",
+    dias: ["Quinta-Feira", "Terça-Feira", "Domingo"],
     skill: 1,
     frequencia: 2,
   },
 ];
 
 export default function Home() {
-  const [selectedMes, setSelectedMes] = useState('Novembro');
+  const [selectedMes, setSelectedMes] = useState("Novembro");
   const [selectedAno, setSelectedAno] = useState(2023);
   const [viewTabela, setViewTabela] = useState(false);
 

@@ -1,7 +1,16 @@
-import Moments, { IUser } from '@/utils/Moments';
-import { useEffect, useState } from 'react';
+import Moments, { IUser } from "@/utils/Moments";
+import { useEffect, useState } from "react";
 
-export default function Checkbox(servo: IUser) {
+export default function Checkbox({
+  servo,
+}: {
+  servo: {
+    name: string;
+    dias: string[];
+    skill: number;
+    frequencia: number;
+  };
+}) {
   const [isChecked, setIsChecked] = useState(true);
 
   const handleCheckboxChange = () => {

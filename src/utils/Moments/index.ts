@@ -1,4 +1,4 @@
-import { servosDefined } from '@/app/page';
+import { servosDefined } from "@/app/page";
 
 export type IUser = {
   name: string;
